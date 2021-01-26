@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
 }
 
 .tweetinput {
@@ -12,5 +11,26 @@
   justify-content: center;
   align-items: center;
   border-bottom: black solid;
-  width: 600px;
+  min-width: 400px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 10px;
+  font-family: " Bungee";
+}
+
+.button {
+  background-color: cornflowerblue;
+  border: solid;
+  margin: 5px 0px;
+  padding: 10px;
+  font-family: " Bungee";
 }
