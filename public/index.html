@@ -28,21 +28,28 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <--new tweet css -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <!-- Tweet Header-->
+    <link rel="stylesheet" href=" /styles/articles.header.css" type="text/css">
     <!-- External JS -->
+    <script src="https://kit.fontawesome.com/cd452b9300.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span> Tweeter </span>
-      <span class="ABC"> <id ="100">Write</id> A New Tweet</span>
+      <span class="glow"> Tweeter </span>
+      
+      <span class="glow"  > <id ="100">Write</id> A New Tweet</span>
+      
     </nav>
     <header>
       <div>
+   
         <img src="/images/profile-hex.png" />
       </div>
       <br />
@@ -54,17 +61,35 @@
     <main class="container">
             <section class="new-tweet">
               <form>
-                <textarea name = "text" input type= "hidden" input placeholder = "What are you humming about?" class= "tweetinput"></textarea>
+                <textarea name = "text"  input placeholder = "What are you humming about?" class= "tweetinput "></textarea>
                     <div class= "row" >
-                      <button type="submit" <form action=“/tweets/” method=“POST” class= "button">Tweet</button>
-                      <output name="counter" class="counter" for="tweet-text">140</output>
-                </div>
-              </form>
+                      <button type="submit" form action=“/tweets/” method=“POST” class= "tweetButton">Tweet</button>
+                      <output name="counter" class="counter black" for="tweettext">140</output>
+                    </div>
+                </form>
               </div>
             </section>
-            
+    
+    <div class=" tweetContainer ">
+      <article>
+        <articleheader>
+          <div class=" headerimage ">  <img src="/images/profile-hex.png" /> </div> 
+          <div class= "headerusername"> Username </div>   
+        
+          <div class ="atname" >  @userName  </div>
+        </articleheader>
+        <p> If i have seen farther it is because i have stood on the shoulders of giants </p>
+        <footer>
+          <p> Writen 10 days ago </p>
+        </footer>
+      </article>
+        
+    </div>
+
+
     </main>
-      
-     
   </body>
+
+  
+    
 </html>

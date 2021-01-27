@@ -1,0 +1,62 @@
+.tweetContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 10px;
+  height: 150px;
+  background-color: rgba(192, 188, 188, 0.87);
+  border: 1px black solid;
+  box-shadow: 8px 10px #888888;
+}
+.tweetContainer:hover {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 10px;
+  height: 150px;
+  background-color: rgba(192, 188, 188, 0.87);
+  border: 3px black solid;
+  box-shadow: 8px 10px #4b4949;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin: ;
+  padding: 10px;
+}
+
+articleheader {
+  display: flex;
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Bungee ";
+  font-size: 14px;
+}
+
+.headerimage {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  width: 30px;
+}
+
+.headerusername {
+  display: flex;
+  flex-direction: row;
+}
+
+.atname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-self: left;
+  padding: 3px;
+  border-top: 1px black solid;
+  font-size: 10px;
+}
