@@ -66,11 +66,20 @@ $(document).ready(function () {
   const $form = $(".tweetform");
   $form.submit(function (event) {
     event.preventDefault();
-    console.log("This if form", $form.serialize());
+    // console.log("This if form", $form.serialize());
     $.ajax({
       method: "POST",
       url: "/tweets",
       data: $form.serialize(),
     }).then(function (morePostsHtml) {});
   });
+
+  function loadTweets() {
+    $.ajax("/tweets", { method: "GET" }).then(function renderTweets(
+      morePostsHtml
+    ) {
+      console.log("Success: ", morePostsHtml);
+    });
+  }
+  loadTweets();
 });
