@@ -58,6 +58,17 @@ main {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+body #error {
+  display: none;
+  color: #ff0707;
+  font-size: 15px;
+  margin-top: 25px;
+  padding: 25px 70px;
+  font-family: "Source Sans Pro", sans-serif;
+  border: 3px solid red;
+  background-color: seashell;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

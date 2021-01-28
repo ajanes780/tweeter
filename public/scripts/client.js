@@ -39,19 +39,29 @@ $(document).ready(function () {
     return markup;
   }
   // renderTweets(tweetData);
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
   const $form = $(".tweetform");
 
   $form.submit(function (event) {
     event.preventDefault();
-    const userTextXSS = $("textarea").text($("textarea").val());
+    const userTextXSS = escape($("textarea").val());
     console.log("userTextXSS  ", userTextXSS);
     let textLength = $("textarea").val().length;
     if (textLength === 0) {
-      $(".errorMessages").append(error);
-      // alert(" How about telling me how you feel really ? ");
+      $("#error").slideToggle("fast", function () {
+        $("#error").text(" How about telling me how you feel really ? ");
+        $("#error").css("display", "block");
+      });
     } else if (textLength > 140) {
-      alert(" Slow down there gabby ! Keep it under  140 ");
+      $("#error").slideToggle("fast", function () {
+        $("#error").text(" Slow down there gabby.... keep it under 140  ");
+        $("#error").css("display", "block");
+      });
     } else {
       $.ajax({
         method: "POST",
@@ -73,19 +83,6 @@ $(document).ready(function () {
       },
     });
   }
-
-  jQuery(function ($) {
-    let validator = $("#form").validate({
-      rules: {
-        first: {
-          required: true,
-        },
-      },
-      messages: {},
-      errorElement: "div",
-      errorLabelContainer: ".errorTxt",
-    });
-  });
 
   loadTweets();
 });

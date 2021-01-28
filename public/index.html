@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" >
-
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
@@ -51,9 +51,9 @@
     <script type="text/javascript" src="/scripts/scrolltotop.js"></script> 
   
   </head>
-
+  <html id="top">
   <body>
-    <a id="top"></a>
+   
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Top nav bar (fixed) -->
     <nav>
@@ -75,16 +75,12 @@
     <!-- Page-specific (main) content here -->
     <a id="tweettime">
     </a>
-    <main class="container">
     
+    <main class="container">
+<div id="error"></div>    
       <section class="new-tweet">
-        <errorscontainer>
-          
-          <ul class="errorMessages"> one thing </ul>
-          
-        </errorscontainer>
-        <form class="tweetform" action=“/tweets”  method="post"  >
-            <textarea name = "text" required  input placeholder = "What are you humming about?" class= "tweetinput"></textarea>
+              <form class="tweetform" action=“/tweets”  method="post"  >
+            <textarea name = "text"  input placeholder = "What are you humming about?" class= "tweetinput"></textarea>
                     <div class= "row" >
                       <button type="submit"  class= "tweetButton">Tweet </button>
                       <output name="counter" class="counter black" for="tweettext">140</output>
