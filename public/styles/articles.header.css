@@ -31,7 +31,7 @@ articleheader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Bungee ";
+  font-family: "Merriweather", serif;
   font-size: 14px;
   justify-items: baseline;
 }
@@ -72,9 +72,9 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 3px;
-  border-top: 1px black solid;
-  font-size: 10px;
+  font-family: "Merriweather", serif;
+  border-top: 3px black solid;
+  font-size: 12px;
   color: rgb(245, 39, 12);
   align-items: center;
 }
