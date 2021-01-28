@@ -48,7 +48,8 @@ $(document).ready(function () {
     console.log("userTextXSS  ", userTextXSS);
     let textLength = $("textarea").val().length;
     if (textLength === 0) {
-      alert(" How about telling me how you feel really ? ");
+      $(".errorMessages").append(error);
+      // alert(" How about telling me how you feel really ? ");
     } else if (textLength > 140) {
       alert(" Slow down there gabby ! Keep it under  140 ");
     } else {
@@ -72,6 +73,19 @@ $(document).ready(function () {
       },
     });
   }
+
+  jQuery(function ($) {
+    let validator = $("#form").validate({
+      rules: {
+        first: {
+          required: true,
+        },
+      },
+      messages: {},
+      errorElement: "div",
+      errorLabelContainer: ".errorTxt",
+    });
+  });
 
   loadTweets();
 });

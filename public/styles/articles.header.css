@@ -74,7 +74,7 @@ footer {
   justify-content: space-between;
   font-family: "Merriweather", serif;
   border-top: 3px black solid;
-  font-size: 12px;
+  font-size: 0.75em;
   color: rgb(245, 39, 12);
   align-items: center;
 }
