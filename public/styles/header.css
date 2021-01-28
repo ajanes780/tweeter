@@ -14,7 +14,8 @@ header {
 
   /* background-image: url("https://www.transparenttextures.com/patterns/argyle.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  font-family: "Londrina Solid", cursive;
+  font-family: "Lobster", cursive;
+  font-size: 35px;
   color: #ffffff;
   border: 1px lightgray solid;
   box-shadow: 10 10 black;

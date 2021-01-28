@@ -8,6 +8,7 @@ nav {
   padding: 1.5em;
   display: flex;
   justify-content: space-between;
+  justify-items: center;
   font-size: 28px;
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
