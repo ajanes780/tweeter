@@ -41,42 +41,58 @@ $(document).ready(function () {
 
   $form.submit(function (event) {
     event.preventDefault();
-    console.log("This if form", $form.serialize());
-    console.log($form);
-    $.ajax({
-      method: "POST",
-      url: "/tweets",
-      data: $form.serialize(),
-    }).then(function (morePostsHtml) {});
-    // $("text").reset();
+    const userTextXSS = $("textarea").text($("textarea").val());
+    let textLength = $("textarea").val().length;
+    if (textLength === 0) {
+      alert(" How about telling me how you feel really ? ");
+    } else if (textLength > 140) {
+      alert(" Slow down there gabby ! Keep it under  140 ");
+    } else {
+      $.ajax({
+        method: "POST",
+        url: "/tweets",
+        data: `text=${userTextXSS}`,
+      }).then(function () {
+        loadTweets();
+        $("textarea").val("");
+      });
+    }
   });
 
   function loadTweets() {
-    $.ajax("/tweets", { method: "GET" }).then(function (morePostsJson) {
-      renderTweets(morePostsJson);
+    $.ajax({
+      method: "GET",
+      url: "/tweets",
+      success: (response) => {
+        renderTweets(response);
+      },
     });
   }
 
-  function checkTweets() {
-    $("textarea").val();
-    let valToCheckTweetForm = $("textarea").val().length;
-    if (valToCheckTweetForm > 140) {
-      alert(" Slow down there gabby ! Keep it under  140 ");
-      return false;
-    }
-    if (valToCheckTweetForm === 0) {
-      alert(" How about telling me how you feel really ? ");
-      return false;
-    } else {
-      $.ajax({
-        url: "/tweets",
-        method: "post",
-        data: $form.serialize,
-      }).then(function (data) {
-        loadTweets();
-        console.log("the ajax request is successfull");
-      });
-    }
-  }
-  checkTweets();
+  loadTweets();
 });
+
+// const $form = $('#tweet-form')
+// $form.submit(function (event) {
+//   event.preventDefault();
+//   // logic to handle XSS
+//   const userText = $('#tweet-text').val();
+//   const userTextXSS = $('#tweet-text').text($('#tweet-text').val())
+//   const textLength = $('#tweet-text').val().length;
+//   // error handling conditions
+//   if (textLength === 0) {
+//     alert("Please type in a tweet");
+//   } else if (textLength > 140) {
+//     alert("You exceeded character limit in your tweet");
+//   } else if (typeof userTextXSS === "object") {
+//     alert("Are you trying to hack us? haha try again!")
+//   } else {
+//     // logic to post tweet
+//     $.post("/tweets/", `text=${userTextXSS}`)
+//       // when response comes refresh page and clear form
+//       .then((response) => {
+//         loadTweets();
+//         $("#tweet-text").val("");
+//       })
+//   }
+// });
