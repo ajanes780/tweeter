@@ -38,14 +38,17 @@ $(document).ready(function () {
   // renderTweets(tweetData);
 
   const $form = $(".tweetform");
+
   $form.submit(function (event) {
     event.preventDefault();
     console.log("This if form", $form.serialize());
+    console.log($form);
     $.ajax({
       method: "POST",
       url: "/tweets",
       data: $form.serialize(),
     }).then(function (morePostsHtml) {});
+    // $("text").reset();
   });
 
   function loadTweets() {
@@ -54,5 +57,26 @@ $(document).ready(function () {
     });
   }
 
-  loadTweets();
+  function checkTweets() {
+    $("textarea").val();
+    let valToCheckTweetForm = $("textarea").val().length;
+    if (valToCheckTweetForm > 140) {
+      alert(" Slow down there gabby ! Keep it under  140 ");
+      return false;
+    }
+    if (valToCheckTweetForm === 0) {
+      alert(" How about telling me how you feel really ? ");
+      return false;
+    } else {
+      $.ajax({
+        url: "/tweets",
+        method: "post",
+        data: $form.serialize,
+      }).then(function (data) {
+        loadTweets();
+        console.log("the ajax request is successfull");
+      });
+    }
+  }
+  checkTweets();
 });
