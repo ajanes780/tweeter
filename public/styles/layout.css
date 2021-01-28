@@ -24,6 +24,8 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   display: flex;
   flex-direction: column;
+  border: 2px solid black;
+  box-shadow: 10, 10 grey;
 }
 
 main {

@@ -21,6 +21,7 @@ $(document).ready(function () {
           <img class=" headerimage" src= ${tweetObject.user.avatars} />
             <p class= "headerusername"> ${tweetObject.user.name}</p >
             </div>
+            
             <p class ="handle" >  ${tweetObject.user.handle}  </p>
           </articleheader>
         <p>${tweetObject.content.text} </p>

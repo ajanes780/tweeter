@@ -1,6 +1,7 @@
 nav {
-  height: 120px;
+  height: 100px;
   width: auto;
+  padding: 20px;
   background-color: #4056a1;
   color: #ffffff;
   font-family: "Londrina Solid", cursive;

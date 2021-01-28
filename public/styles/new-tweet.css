@@ -33,11 +33,21 @@
 
 .tweetButton {
   background-color: cornflowerblue;
-
   margin: 5px 0px;
   padding: 10px;
-  font-family: " Bungee";
+  font-family: "Londrina Solid", cursive;
   color: white;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+.tweetButton:hover {
+  background-color: rgb(2, 2, 3);
+  margin: 5px 0px;
+  padding: 10px;
+  font-family: "Londrina Solid", cursive;
+  color: white;
+  box-shadow: 10 10 black;
+  border-radius: 15px;
 }
 
 .black {

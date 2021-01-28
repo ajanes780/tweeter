@@ -1,6 +1,7 @@
 header {
   margin-top: 100px;
-  height: 450px;
+  padding: 10px;
+  height: 550px;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,10 @@ header {
 
   /* background-image: url("https://www.transparenttextures.com/patterns/argyle.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  font-family: "Londrina Solid", cursive;
+  color: #ffffff;
   border: 1px lightgray solid;
+  box-shadow: 10 10 black;
 }
 
 .glow {
