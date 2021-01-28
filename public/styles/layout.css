@@ -18,19 +18,23 @@ html {
 
 body {
   width: auto;
+  height: 350px;
   color: #545149;
   background-color: #f4f1ec;
   font-family: "Source Sans Pro", sans-serif;
   display: flex;
   flex-direction: column;
 }
+
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5%;
-  background-color: #f4f1ec;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #adc6e71a;
 }
 
 /*

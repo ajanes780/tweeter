@@ -1,13 +1,17 @@
 header {
   margin-top: 100px;
-  height: 400px;
+  height: 450px;
   width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #a6d1ff;
-  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://mcdn.wallpapersafari.com/medium/99/63/0y7sVe.jpg);
+
+  /* background-image: url("https://www.transparenttextures.com/patterns/argyle.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   border: 1px lightgray solid;
 }

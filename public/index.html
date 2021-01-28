@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <!- Header css ->
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-    <--new tweet css -->
+    <!--new tweet css -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <!-- Tweet Header-->
     <link rel="stylesheet" href=" /styles/articles.header.css" type="text/css">
@@ -60,31 +60,17 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
             <section class="new-tweet">
-              <form>
+              <form class="tweetform" action=“/tweets”  method="post"  >
                 <textarea name = "text"  input placeholder = "What are you humming about?" class= "tweetinput "></textarea>
                     <div class= "row" >
-                      <button type="submit" form action=“/tweets/” method=“POST” class= "tweetButton">Tweet</button>
+                      <button type="submit"  class= "tweetButton">Tweet </button>
                       <output name="counter" class="counter black" for="tweettext">140</output>
                     </div>
                 </form>
               </div>
             </section>
     
-    <div class=" tweetContainer ">
-      <article>
-        <articleheader>
-          <div class=" headerimage ">  <img src="/images/profile-hex.png" /> </div> 
-          <div class= "headerusername"> Username </div>   
-        
-          <div class ="atname" >  @userName  </div>
-        </articleheader>
-        <p> If i have seen farther it is because i have stood on the shoulders of giants </p>
-        <footer>
-          <p> Writen 10 days ago </p>
-        </footer>
-      </article>
-        
-    </div>
+    <div class="tweetsContainer">  </div>
 
 
     </main>

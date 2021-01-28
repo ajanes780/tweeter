@@ -1,16 +1,16 @@
 .tweetContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 20px;
   padding: 10px;
   height: 150px;
-  background-color: rgba(192, 188, 188, 0.87);
+  background-color: rgba(228, 228, 228, 0.952);
   border: 1px black solid;
   box-shadow: 8px 10px #888888;
 }
 .tweetContainer:hover {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 20px;
   padding: 10px;
   height: 150px;
@@ -22,17 +22,25 @@
 article {
   display: flex;
   flex-direction: column;
-  margin: ;
   padding: 10px;
 }
 
 articleheader {
   display: flex;
-  width: 350px;
-  display: flex;
   flex-direction: row;
+  justify-content: space-between;
   font-family: "Bungee ";
   font-size: 14px;
+  justify-items: baseline;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.handle {
+  justify-self: flex-end;
 }
 
 .headerimage {
@@ -55,8 +63,20 @@ articleheader {
 footer {
   display: flex;
   flex-direction: row;
-  justify-self: left;
+  justify-content: space-between;
   padding: 3px;
   border-top: 1px black solid;
   font-size: 10px;
+  color: rgb(245, 39, 12);
+  align-items: center;
+}
+
+.icongroup {
+  display: flex;
+  justify-content: space-around;
+}
+
+i {
+  color: red;
+  margin: 3px;
 }

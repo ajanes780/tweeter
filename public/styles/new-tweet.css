@@ -10,13 +10,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: black solid;
-  border-top: darkgrey;
-  border-left: darkgrey;
-  border-right: darkgrey;
   min-width: 400px;
-  background-color: #f4f1ec;
   font-family: " Bungee";
+  background: transparent;
+  border: unset;
+  height: 25px;
+  border-bottom: 3px black solid;
 }
 
 .row {
