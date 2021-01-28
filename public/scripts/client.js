@@ -12,6 +12,8 @@ $(document).ready(function () {
   };
 
   function createTweetElement(tweetObject) {
+    console.log("tweetObject ", tweetObject.content);
+    console.log("userTextXSS ", tweetObject.content.text["userTextXSS"]);
     const markup = ` <div class= "tweetContainer ">
         <article>
           <articleheader>
@@ -42,6 +44,7 @@ $(document).ready(function () {
   $form.submit(function (event) {
     event.preventDefault();
     const userTextXSS = $("textarea").text($("textarea").val());
+    console.log("userTextXSS  ", userTextXSS);
     let textLength = $("textarea").val().length;
     if (textLength === 0) {
       alert(" How about telling me how you feel really ? ");
