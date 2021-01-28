@@ -71,28 +71,3 @@ $(document).ready(function () {
 
   loadTweets();
 });
-
-// const $form = $('#tweet-form')
-// $form.submit(function (event) {
-//   event.preventDefault();
-//   // logic to handle XSS
-//   const userText = $('#tweet-text').val();
-//   const userTextXSS = $('#tweet-text').text($('#tweet-text').val())
-//   const textLength = $('#tweet-text').val().length;
-//   // error handling conditions
-//   if (textLength === 0) {
-//     alert("Please type in a tweet");
-//   } else if (textLength > 140) {
-//     alert("You exceeded character limit in your tweet");
-//   } else if (typeof userTextXSS === "object") {
-//     alert("Are you trying to hack us? haha try again!")
-//   } else {
-//     // logic to post tweet
-//     $.post("/tweets/", `text=${userTextXSS}`)
-//       // when response comes refresh page and clear form
-//       .then((response) => {
-//         loadTweets();
-//         $("#tweet-text").val("");
-//       })
-//   }
-// });
