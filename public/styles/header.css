@@ -1,25 +1,67 @@
-header {
-  margin-top: 100px;
-  padding: 10px;
-  height: 550px;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #a6d1ff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: radial-gradient(yellow, blue, purple);
-  /* background-image: url(https://mcdn.wallpapersafari.com/medium/99/63/0y7sVe.jpg); */
+@media (min-width: 300px) {
+  header {
+    margin-top: 2em;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6d1ff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(yellow, blue, purple);
+    font-family: "Lobster", cursive;
+    font-size: 35px;
+    color: #ffffff;
+    border: 1px lightgray solid;
+    box-shadow: 10 10 black;
+  }
+}
 
-  /* background-image: url("https://www.transparenttextures.com/patterns/argyle.png"); */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  font-family: "Lobster", cursive;
-  font-size: 35px;
-  color: #ffffff;
-  border: 1px lightgray solid;
-  box-shadow: 10 10 black;
+@media (min-width: 600px) {
+  header {
+    margin-top: 1.5em;
+    padding: 10px;
+    height: 550px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6d1ff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(yellow, blue, purple);
+    font-family: "Lobster", cursive;
+    font-size: 35px;
+    color: #ffffff;
+    border: 1px lightgray solid;
+    box-shadow: 10 10 black;
+  }
+}
+
+@media (min-width: 800px) {
+  header {
+    margin-top: 100px;
+    padding: 10px;
+    height: 800px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a6d1ff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(yellow, blue, purple);
+    font-family: "Lobster", cursive;
+    font-size: 35px;
+    color: #ffffff;
+    border: 1px lightgray solid;
+    box-shadow: 10 10 black;
+  }
 }
 
 .glow {

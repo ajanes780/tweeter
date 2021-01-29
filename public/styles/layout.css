@@ -14,31 +14,89 @@ html {
 
 /*
  * Global layout stuff
+  media break points 300/600/800
+  
  */
 
-body {
-  width: auto;
-  height: auto;
-  color: #545149;
-  background-repeat: none;
-  background-image: radial-gradient(yellow, blue, purple);
-  font-family: "Source Sans Pro", sans-serif;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid black;
+@media (min-width: 300px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #adc6e71a;
+  }
+
+  body {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    color: #545149;
+    background-repeat: none;
+    background-image: radial-gradient(yellow, blue, purple);
+    font-family: "Source Sans Pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+  }
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #adc6e71a;
+@media (min-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #adc6e71a;
+  }
+  body {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    color: #545149;
+    background-repeat: none;
+    background-image: radial-gradient(yellow, blue, purple);
+    font-family: "Source Sans Pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+  }
 }
 
+@media (min-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #adc6e71a;
+  }
+
+  body {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    color: #545149;
+    background-repeat: none;
+    background-image: radial-gradient(yellow, blue, purple);
+    font-family: "Source Sans Pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+  }
+}
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */

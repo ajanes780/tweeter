@@ -7,7 +7,7 @@ $(document).ready(function () {
   const renderTweets = function (tweets) {
     tweets.forEach((tweet) => {
       const result = createTweetElement(tweet);
-      $(".tweetsContainer").append(result);
+      $(".tweetsContainer").prepend(result);
     });
   };
 
@@ -51,6 +51,8 @@ $(document).ready(function () {
     event.preventDefault();
     const userTextXSS = escape($("textarea").val());
     console.log("userTextXSS  ", userTextXSS);
+    const $errorcontainer = $("#error");
+    $errorcontainer.hide("fast");
     let textLength = $("textarea").val().length;
     if (textLength === 0) {
       $("#error").slideToggle("fast", function () {
