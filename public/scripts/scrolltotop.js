@@ -6,7 +6,7 @@ $(document).ready(function () {
   window.onscroll = function () {
     scrollFunction();
   };
-
+  // logic to determine  when to show button
   function scrollFunction() {
     if (
       document.body.scrollTop > 20 ||
@@ -17,7 +17,7 @@ $(document).ready(function () {
       mybutton.style.display = "none";
     }
   }
-
+  // the magic button
   function scrollToTop() {
     rootElement.scrollTo({
       top: 0,

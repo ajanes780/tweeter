@@ -46,7 +46,7 @@ $(document).ready(function () {
   };
 
   const $form = $(".tweetform");
-
+  // submiting tweets and tweet protection logic
   $form.submit(function (event) {
     event.preventDefault();
     const userTextXSS = escape($("textarea").val());
@@ -55,14 +55,14 @@ $(document).ready(function () {
     $errorcontainer.hide("fast");
     let textLength = $("textarea").val().length;
     if (textLength === 0) {
-      $("#error").slideToggle("fast", function () {
-        $("#error").text(" How about telling me how you feel really ? ");
-        $("#error").css("display", "block");
+      $errorcontainer.slideToggle("fast", function () {
+        $errorcontainer.text(" How about telling me how you feel really ? ");
+        $errorcontainer.css("display", "block");
       });
     } else if (textLength > 140) {
-      $("#error").slideToggle("fast", function () {
-        $("#error").text(" Slow down there gabby.... keep it under 140  ");
-        $("#error").css("display", "block");
+      $errorcontainer.slideToggle("fast", function () {
+        $errorcontainer.text(" Slow down there gabby.... keep it under 140  ");
+        $errorcontainer.css("display", "block");
       });
     } else {
       $.ajax({
@@ -85,6 +85,5 @@ $(document).ready(function () {
       },
     });
   }
-
   loadTweets();
 });
