@@ -1,10 +1,9 @@
-/*media break points300/600/800  */
+/*media break points  */
 
 @media (min-width: 300px) {
   nav {
     height: 100px;
     width: auto;
-    padding: 20px;
     background-color: #4056a1;
     color: #ffffff;
     font-family: "Londrina Solid", cursive;
@@ -30,7 +29,6 @@
   nav {
     height: 100px;
     width: auto;
-    padding: 20px;
     background-color: #4056a1;
     color: #ffffff;
     font-family: "Londrina Solid", cursive;
@@ -56,7 +54,6 @@
   nav {
     height: 100px;
     width: auto;
-    padding: 50px;
     background-color: #4056a1;
     color: #ffffff;
     font-family: "Londrina Solid", cursive;
