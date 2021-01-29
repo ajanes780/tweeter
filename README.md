@@ -7,7 +7,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 <img src="https://github.com/ajanes780/tweeter/blob/master/public/images/selection_2.png?raw=true">
 
-<img src="https://github.com/ajanes780/tweeter/blob/master/public/images/selection_tweeter.png?raw=true">
+#Responise Design
+
+<img src="https://github.com/ajanes780/tweeter/blob/master/public/images/selection_44.png?raw=true">
 
 
 ## Getting Started
@@ -21,5 +23,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
 
 
