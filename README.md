@@ -7,7 +7,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 <img src="https://github.com/ajanes780/tweeter/blob/master/public/images/selection_2.png?raw=true">
 
-# Responise Design
+## Responise Design
 
 <img src="https://github.com/ajanes780/tweeter/blob/master/public/images/selection_44.png?raw=true">
 
@@ -23,10 +23,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
- -body-parser
- -chance
- -moment
- -morgan
+- body-parser
+- chance
+- moment
+- morgan
 
 
 
