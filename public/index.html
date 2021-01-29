@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" >
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-
-  <head>
-    
+<head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
     <!-- External CSS -->
     <link
       rel="stylesheet"
@@ -14,10 +11,10 @@
       type="text/css"
     />
 
-    <!-- font import -->
+<!-- font import -->
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
       href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap"
       rel="stylesheet"
     />
@@ -25,14 +22,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Merriweather+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
-
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
-
-
 <!-- App CSS -->
 <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
 <!-- Nav Css -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <!- Header css ->
@@ -44,58 +37,45 @@
     <!-- External JS -->
     <script src="https://kit.fontawesome.com/cd452b9300.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     <script type="text/javascript" src="/scripts/scrolltotop.js"></script> 
-  
   </head>
   <html id="top">
   <body>
-  
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="glow"> 🐣  Tweeter   🐥   </span>
-      
       <span class="glow"  > <a href="#tweettime"> 🐥 Write A New Tweet 🐣 </a> </span>
-      
     </nav>
-    <header>
-      <div>
-  
-        <img src="/images/profile-hex.png" />
-      </div>
-      <br />
+<div class= "container">
+
+<header>
+  <div>
+    <img src="/images/profile-hex.png" />
+      <br/>
         <h2>Aaron Janes</h2>
       </div>
-
+      <a id="tweettime"></a>
     </header>
-    
     <!-- Page-specific (main) content here -->
-    <a id="tweettime"></a>
-    
 
-    <main class="container">
+<main>
 <div id="error"></div>    
-      <section class="new-tweet">
-              <form class="tweetform" action=“/tweets”  method="post"  >
-            <textarea name = "text"  input placeholder = "What are you humming about?" class= "tweetinput"></textarea>
-                    <div class= "row" >
-                      <button type="submit"  class= "tweetButton">Tweet </button>
-                      <output name="counter" class="counter black" for="tweettext">140</output>
-                    </div>
-                </form>
-              </div>
-            </section>
-    
+  <section class="new-tweet">
+  <form class="tweetform" action=“/tweets” method="post">
+    <label for="tweet-text"> What are you humming about?"  </label>
+      <textarea name = "text"  id="tweet-text" class= "tweetinput"></textarea>
+        <div class= "row">
+        <button type="submit"  class= "tweetButton">Tweet </button>
+        <output name="counter" class="counter black" for="tweettext">140</output>
+        </div>
+        </form>
+      </section>
     <div class="tweetsContainer">  </div>
-
-    
     </main>
-    
-      
+    </div>
   </body>
-
 </html>

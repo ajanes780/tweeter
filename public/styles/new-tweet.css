@@ -43,9 +43,14 @@ errorMessages {
   flex-direction: column;
   justify-content: flex-end;
   margin: 10px;
-  font-family: " Bungee";
+  font-size: 25px;
+  font-family: "Londrina Solid", cursive;
 }
-
+label {
+  color: black;
+  font-size: 35px;
+  font-family: "Londrina Solid", cursive;
+}
 .tweetButton {
   background-color: cornflowerblue;
   margin: 5px 0px;

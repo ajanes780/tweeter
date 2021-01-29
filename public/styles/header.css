@@ -8,19 +8,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #a6d1ff;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: radial-gradient(yellow, blue, purple);
+    /* background-image: radial-gradient(yellow, blue, purple); */
     font-family: "Lobster", cursive;
     font-size: 35px;
     color: #ffffff;
-    border: 1px lightgray solid;
-    box-shadow: 10 10 black;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 950px) {
   header {
     margin-top: 1.5em;
     padding: 10px;
@@ -30,37 +27,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #a6d1ff;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: radial-gradient(yellow, blue, purple);
     font-family: "Lobster", cursive;
     font-size: 35px;
     color: #ffffff;
-    border: 1px lightgray solid;
-    box-shadow: 10 10 black;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   header {
-    margin-top: 100px;
-    padding: 10px;
-    height: 800px;
-    width: 800px;
+    margin-top: 200px;
+    padding: 5px;
+    height: 900px;
+    width: 650px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #a6d1ff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: radial-gradient(yellow, blue, purple);
     font-family: "Lobster", cursive;
     font-size: 35px;
     color: #ffffff;
-    border: 1px lightgray solid;
-    box-shadow: 10 10 black;
   }
 }
 

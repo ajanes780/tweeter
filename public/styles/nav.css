@@ -26,7 +26,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 950px) {
   nav {
     height: 100px;
     width: auto;
@@ -38,7 +38,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
     font-size: 28px;
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
@@ -53,7 +52,7 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   nav {
     height: 100px;
     width: auto;
