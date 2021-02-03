@@ -12,7 +12,7 @@
   align-items: center;
   min-width: 400px;
   font-family: " Bungee";
-  background: lightgrey;
+  background: white;
   border: unset;
   height: 45px;
   border-bottom: 3px black solid;
@@ -63,6 +63,7 @@ label {
   color: white;
   border-radius: 15px;
   border: 3px solid black;
+
 }
 .tweetButton:hover {
   background-color: rgb(2, 2, 3);
