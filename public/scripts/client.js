@@ -5,6 +5,7 @@
  */
 $(document).ready(function () {
   const renderTweets = function (tweets) {
+    $(".tweetsContainer").empty();
     tweets.forEach((tweet) => {
       const result = createTweetElement(tweet);
       $(".tweetsContainer").prepend(result);
@@ -26,7 +27,7 @@ $(document).ready(function () {
           </articleheader>
         <p>${tweetObject.content.text} </p>
     <footer>
-    <p> ${tweetObject.created_at}</p>
+    <p> ${moment(tweetObject.created_at).fromNow()}</p>
     <div class= "icongroup">
     <i class="fas fa-flag"></i>
     <i class="fas fa-retweet"></i>

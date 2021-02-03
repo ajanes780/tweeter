@@ -127,6 +127,14 @@ body #error {
   border-radius: 25px;
   background-color: seashell;
 }
+#newTweetBtn {
+  background: transparent;
+}
+
+#newTweetBtn:hover {
+  background: grey;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
